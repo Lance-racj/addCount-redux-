@@ -3,7 +3,7 @@ import store from '../redux/store'
 //引入count组件对应的action_creater
 import {createAddAction,createnoAddAction} from '../redux/count_actioncreater'
 
-export default class count extends Component {
+export default class Count extends Component {
     //加法
     add=()=>{
         let {value} = this.refs.kvalue;

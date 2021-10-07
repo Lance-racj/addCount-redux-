@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import store from '../redux/store'
 
-export default class count extends Component {
+export default class Count extends Component {
 
     //加法
     add=()=>{
