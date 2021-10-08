@@ -5,3 +5,4 @@
 
 export const ADD = 'add';
 export const NOADD = 'noadd';
+export const ADD_PERSON = 'add_person'

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 //Count是容器组件
 import Count from './containers/Count'
+import Person from './containers/Person'
 import store from './redux/store'
 
 export default class App extends Component {
@@ -16,6 +17,8 @@ export default class App extends Component {
         return (
             <div>
                 <Count store={store}/>
+                <hr />
+                <Person store={store}/>
             </div>
         )
     }

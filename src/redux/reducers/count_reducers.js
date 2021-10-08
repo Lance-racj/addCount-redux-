@@ -1,6 +1,9 @@
-import {ADD,NOADD} from './constant'
+import {ADD,NOADD} from '../constant'
 
-export default function countReducer(pre,action){
+const init = 0;
+
+export default function countReducer(pre=init,action){
+
     let {type,data} = action;
     switch(type){
         case ADD:
@@ -9,6 +12,6 @@ export default function countReducer(pre,action){
             return pre-data;
         //初始化为0，也就是action的type是@@init~
         default:
-            return 0;
+            return pre;
     }
 }

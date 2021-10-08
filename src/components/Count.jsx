@@ -29,7 +29,7 @@ export default class Count extends Component {
     render(){
         return (
             <div>
-                <h1>当前求和为:{this.props.count}</h1>
+                <h1>当前求和为:{this.props.alldata.firstCount}</h1>
                 <select ref="kvalue">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -39,6 +39,14 @@ export default class Count extends Component {
                 <button onClick={this.noadd}>-</button>&nbsp;
                 <button onClick={this.addIfOdd}>求和为奇数再加</button>&nbsp;
                 <button onClick={this.addAnsyc}>异步加</button>&nbsp;
+
+                <ul>
+                    {
+                        this.props.alldata.secondPerson.map((personObj)=>{
+                            return <li key="">{personObj.name}--{personObj.age}</li>
+                        })
+                    }
+                </ul>
             </div>
         )
     }
